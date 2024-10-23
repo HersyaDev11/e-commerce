@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Baju Minimalis</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">BajuKu</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" id="open-cart">Keranjang</a></li>
+            <!-- Tambah link untuk keranjang -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Baju Minimalis untuk Segala Gaya</h2>
+        <p>Tampil keren dengan koleksi baju minimalis terbaik.</p>
+        <a href="#shop" class="btn">Belanja Sekarang</a>
+      </div>
+    </section>
+
+    <section id="shop" class="products">
+      <div class="container">
+        <h2 class="section-title">Koleksi Baju</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Baju 1" />
+            <h3>Baju Hitam Polos</h3>
+            <p class="price">Rp 150.000</p>
+            <button class="btn">Beli Sekarang</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Baju 2" />
+            <h3>Baju Putih Oversize</h3>
+            <p class="price">Rp 180.000</p>
+            <button class="btn">Beli Sekarang</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Baju 3" />
+            <h3>Baju Abu-abu Minimalis</h3>
+            <p class="price">Rp 170.000</p>
+            <button class="btn">Beli Sekarang</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Baju 4" />
+            <h3>Baju Stripe Modern</h3>
+            <p class="price">Rp 160.000</p>
+            <button class="btn">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal untuk Keranjang -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <button class="btn" id="checkout">Lanjutkan ke Checkout</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 BajuKu. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
